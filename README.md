@@ -25,3 +25,4 @@ Ex: docker run --name my-node-app-2 -p 5000:3000 -v C:\Users\saite\source\Docker
 docker run --name <container-name> -p 3000:3000 -v /usr/src/app/node_modules -v $(pwd):/user/src/app <image-name> `Syncs the local project with the container and excludes the node_modules`
 docker exec -it <container-name> sh `Access the container for windows`
 docker build -t dockerdemoapp:v3 -f Dockerfile.dev . `Creates a build file from dev docker file for dev env`
+docker exec -it my-node-app with-ignore sh
